@@ -1,0 +1,45 @@
+name: Compile resume PDF
+
+on:
+  push:
+    paths:
+      - Luke_Pitstick_Resume.tex
+      - compile.sh
+      - .github/workflows/compile-resume.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended
+
+      - name: Compile PDF
+        run: ./compile.sh
+
+      - name: Commit updated PDF
+        run: |
+          if git diff --quiet -- Luke_Pitstick_Resume.pdf; then
+            echo "PDF is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Luke_Pitstick_Resume.pdf
+          git commit -m "Compile resume PDF"
+          git push

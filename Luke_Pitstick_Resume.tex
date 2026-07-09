@@ -14,15 +14,10 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{xcolor}
-\usepackage[
-    colorlinks=true,
-    urlcolor=blue,
-    linkcolor=blue
-]{hyperref}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -120,17 +115,17 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {WattByte Nexus}{Jun. 2026 -- Present}
-      {AI/ML Research Intern}{Golden, CO}
+      {AI/ML Engineer Intern}{Jun. 2026 -- Present}
+      {WattByte Nexus}{Golden, CO}
       \resumeItemListStart
-        \resumeItem{Design and implement physics-informed PyTorch models to predict and reduce wildfire risk from power-grid infrastructure.}
+        \resumeItem{Design and implement physics-informed neural networks with PyTorch to predict and reduce wildfire risk from power-grid infrastructure.}
         \resumeItem{Build event-driven wildfire-risk simulations using NOAA weather data, AWS, and Redis to model grid assets, environmental conditions, and failure scenarios.}
         \resumeItem{Design and build an AWS pipeline using Fargate, SQS, and Glue to process video footage into segmented 3D representations.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {National Oceanic and Atmospheric Administration / CIRES}{Oct. 2025 -- Present}
-      {Junior Data Manager}{Boulder, CO}
+      {Junior Data Manager}{Oct. 2025 -- Present}
+      {National Oceanic and Atmospheric Administration}{Boulder, CO}
       \resumeItemListStart
         \resumeItem{Automate ingestion, validation, and archival workflows for 10TB+/week of ocean acoustic data using Python, Oracle DB, and AWS S3.}
         \resumeItem{Maintain end-to-end sonar data workflows ingesting water column and passive acoustic data from NOAA research vessels into NCEI's national archive.}
@@ -138,8 +133,8 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Ranked Choice Voting for Longmont}{Aug. 2025 -- Dec. 2025}
-      {Data Science Intern}{Boulder, CO}
+      {Data Science Intern}{Aug. 2025 -- Dec. 2025}
+      {Ranked Choice Voting for Longmont}{Boulder, CO}
       \resumeItemListStart
         \resumeItem{Engineered high-resolution demographic maps in ArcGIS, R, and Python, enabling campaign teams to identify turnout gaps and execute targeted outreach.}
         \resumeItem{Developed fixed-effects regression models to predict voter turnout, allowing the campaign team to make targeted decisions.}
@@ -150,8 +145,8 @@
 \section{Leadership Experience}
     \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Colorado Student Government}{May 2025 -- May 2026}
-      {Representative-at-Large \& Press Secretary}{Boulder, CO}
+      {Representative-at-Large \& Press Secretary}{May 2025 -- May 2026}
+      {University of Colorado Student Government}{Boulder, CO}
       \resumeItemListStart
         \resumeItem{Supported allocation of a \$36M student budget across 12 cost centers, coordinating with university administrators to ensure equitable fund distribution.}
         \resumeItem{Led a 6-person team to increase student engagement across social media channels by 15\%.}
@@ -163,23 +158,23 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Swipe-Based Recipe Recommendation App} $|$ \emph{React Native, Python, pgvector, Figma}}{May 2026 -- Present}
+          {\textbf{Recipe Social Media App} $|$ \emph{React Native, Python, pgvector, Figma} $|$ \href{https://plateapp.framer.website/}{\underline{Launch Page}}}{June 2026 -- Present}
           \resumeItemListStart
-            \resumeItem{Develop a mobile recipe app that helps users discover recipes, save favorites, and plan meals for the week.}
+            \resumeItem{Develop and design a social media recipe app that allows users to discover new recipes and plan their week.}
             \resumeItem{Build a personalized recipe recommendation engine using vector embeddings and pgvector to learn user preferences from swipe behavior.}
-            \resumeItem{Design and develop a recipe ingestion pipeline to scrape, clean, embed, and index recipes for personalized content discovery.}
+            \resumeItem{Develop a data pipeline in order to web scrape recipes, clean, and convert them to vector embeddings in order to deliver a wide variety of new content.}
           \resumeItemListEnd
     \resumeProjectHeading
-          {\textbf{InfraDrone} $|$ \emph{Python, C++, PyTorch, TensorRT, OpenCV} $|$ \href{https://github.com/Luke-Pitstick/InfraDrone}{\underline{GitHub}}}{Apr. 2026 -- Present}
+          {\textbf{InfraDrone} $|$ \emph{Python, C++, PyTorch, TensorRT} $|$ \href{https://github.com/Luke-Pitstick/InfraDrone}{\underline{GitHub}}}{Apr. 2026 - Present}
           \resumeItemListStart
               \resumeItem{Design and build an autonomous drone and ground station using a Jetson Orin Nano, MAVLink, and TensorRT for offline road-damage surveys.}
-            \resumeItem{Trained YOLO models to detect and classify road damage, achieving 80\% precision and 75\% mAP@50 on validation data.}
-            \resumeItem{Develop a temporal analysis engine using YOLO segmentation and geospatial alignment to estimate crack growth over time.}
+            \resumeItem{Developed a custom AI pipeline to detect, classify, and calculate the severity of road damage using augmented YOLOv26 models resulting in 80\% precision and 75\% mAP@50.}
+            \resumeItem{Implement a temporal engine to determine cracks growth over time using YOLO segmentation models and a custom GPS-based algorithm.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Renewably} $|$ \emph{Python, XGBoost, Polars, React, FastAPI} $|$ \href{https://renewably-wind.onrender.com/}{{\underline{Demo}}}}{Apr. 2026}
           \resumeItemListStart
-            \resumeItem{Won 1st place at BlasterHacks 2026 for building an interactive renewable-energy siting platform with React and ArcGIS.}
+            \resumeItem{Won 1st place at BlasterHacks 2026; built an interactive renewable energy siting platform with React and ArcGIS.}
             \resumeItem{Trained an XGBoost model on geospatial features to score wind-farm site viability against existing wind turbine locations. Achieved 96\% accuracy on validation data.}
             \resumeItem{Built a FastAPI optimization pipeline to evaluate thousands of candidate locations within user-defined regions.}
           \resumeItemListEnd
@@ -191,10 +186,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, TypeScript, SQL, R} \\
-     \textbf{Frameworks/Libraries}{: PyTorch, NumPy, scikit-learn, pandas, Polars, React, FastAPI} \\
-     \textbf{Cloud/Databases}{: AWS, PostgreSQL, Redis, Supabase} \\
-     \textbf{Other}{: Docker, Git, Linux, ArcGIS, Figma}
+     \textbf{Languages}{: Python, C++, TypeScript, SQL, R} \\
+     \textbf{Frameworks/Libraries}{: PyTorch, NumPy, scikit-Learn, pandas, Polars, ggplot2, Matplotlib, React, FastAPI} \\
+     \textbf{Cloud/Databases}{: Redis, AWS, GCP, PostgreSQL,Modal, Render} \\
+     \textbf{Other}{: Figma, ArcGIS, Bash, Linux, Git}
     }}
  \end{itemize}
 

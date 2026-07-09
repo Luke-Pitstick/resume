@@ -1,0 +1,3 @@
+WRN 2026-07-04T18:33:33.852 ?.23772    server_start:199: Failed to start server: operation not permitted: /var/folders/5g/m0r4gtb92cd65m1l48wr7sf00000gn/T/nvim.lukepitstick/xyW1IZ/nvim.23772.0
+WRN 2026-07-04T18:36:51.726 ?.26721    server_start:199: Failed to start server: operation not permitted: /var/folders/5g/m0r4gtb92cd65m1l48wr7sf00000gn/T/nvim.lukepitstick/R7qXVN/nvim.26721.0
+WRN 2026-07-04T18:36:51.726 ?.26722    server_start:199: Failed to start server: operation not permitted: /var/folders/5g/m0r4gtb92cd65m1l48wr7sf00000gn/T/nvim.lukepitstick/ElbLfd/nvim.26722.0
